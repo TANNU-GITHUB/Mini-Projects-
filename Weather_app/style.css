@@ -1,0 +1,111 @@
+*{
+   margin: 0; 
+   padding: 0;
+   border: none;
+   outline: none;
+}
+body{
+    height: 100vh;
+    background-color: rgb(10, 161, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: min-content;
+    width: 400px;
+    background-color: rgb(239, 255, 253);
+    border-radius: 15px;
+    padding: 20px;
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.input-box{
+    width: 80%;
+    background-color: rgb(184, 255, 249);
+    border-radius: 14px;
+    padding: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+}
+.input-box ::placeholder{
+    color: black;
+}
+button{
+    height: 50px;
+    width: 50px;
+    background-color:rgb(184, 255, 249) ;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+button:hover{
+    color: white;
+    background-color: rgb(146, 153, 160);
+}
+.weather-body img{
+    width: 40%;   
+}
+.weather-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+.weather-box .temprature{
+    font-weight: 800;
+    font-size: 50px;
+    position: relative;
+}
+.weather-box .temprature sup{
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+}
+.description{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.humidity{
+    margin-left: 40px;
+}
+.wind{
+    margin-right: 40px;
+}
+span{
+    font-weight: bold;
+}
+.location-not-found{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-block: 40px;
+}
+.location-not-found h2{
+
+    font-size: larger;
+    color: rgb(106, 99, 99);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.location-not-found img {
+    width: 80%;
+}
