@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone-Paper-Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Rock-Paper-Scissors</h1>
+    <div class="container">
+        <div class="choices">
+        <div class="choice " id="rock"> <img src="./image/rock.jpeg" alt="rock"></div>
+        <div class="choice" id="paper"> <img src="./image/paper.jpeg" alt="paper"></div>
+        <div class="choice " id="scissor"> <img src="./image/scissors.jpeg" alt="scissor">
+        </div>
+    </div>
+
+        <div class="score-board">
+            <div class="score">
+                <p id="user-score">0</p>
+                <p>User</p>
+            </div>
+            <div class="score">
+                <p id="computer-score">0</p>
+                <p>Computer</p>
+            </div>
+        </div>
+
+        <div class="msg-container">
+            <p class="msg">Play your move</p>
+        </div>
+    </div>
+    <div class="restart">
+        <button ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+          </svg> RESTART</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
